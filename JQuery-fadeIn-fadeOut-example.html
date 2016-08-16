@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title> jQuery - Useful functions</title>
+		
+		<script type = "text/javascript" src="jquery.min.js"> </script>
+		
+		<style type = "text/css">
+			#text {
+				display:block;
+			}	
+		</style>
+	</head>
+	
+	<body>
+		<p id="text"> This is sample text. This is another line in paragraph. </p>
+		
+		<button id="toggleButton"> Toggle </button>
+		
+		<script type = "text/javascript">
+		
+		//alert($("#text").css(display));	
+		$("#toggleButton").click(function(){
+			if ($("#text").css("display") == "none") {
+				$("#text").fadeIn("slow");
+			} else {
+				$("#text").fadeOut("slow");
+			}	
+		});
+		
+		
+		</script>
+		
+	</body>
+</html>
